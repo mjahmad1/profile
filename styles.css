@@ -4,7 +4,15 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-
+<style>
+.menu-icon {
+width: 35px; /* আইকনের প্রস্থ */
+height: 5px; /* আইকনের উচ্চতা */
+background-color: black; /* আইকনের রঙ */
+margin: 6px 0; /* আইকনের মার্জিন */
+transition: 0.4s; /* অ্যানিমেশনের সময়কাল */
+}
+</style>
 /* ফন্ট ডিফাইনেশন */
 body {
 font-family: 'Arial', sans-serif;

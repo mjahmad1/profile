@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <header>
-      <div class="container">
-        <nav class="navbar">
-          <a href="https://www.froala.com">
-            <img src="logo.png" height="30" alt="image">
-          </a>
-        </nav>
-      </div>
-    </header>
-  <script>
-  var page = window.location.pathname.split('/')
-  page = page[page.length - 1]
-
-  var nav = document.querySelector('a[href="' + page + '"]')
-  if (nav) {
-    nav.classList.add('active')
-  }
-
-</script>
+    
   <title>Froala Design Blocks</title>
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
 
@@ -146,6 +128,25 @@
 </style>
 
 <section class="fdb-block p-2" id="navigator">
+      <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="https://www.froala.com">
+            <img src="logo.png" height="30" alt="image">
+          </a>
+        </nav>
+      </div>
+    </header>
+  <script>
+  var page = window.location.pathname.split('/')
+  page = page[page.length - 1]
+
+  var nav = document.querySelector('a[href="' + page + '"]')
+  if (nav) {
+    nav.classList.add('active')
+  }
+
+</script>
   <div class="container-fluid">
     <nav class="navbar navbar-expand-md">
       <button class="navbar-toggler mr-auto ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav0" aria-controls="navbarNav0" aria-expanded="false" aria-label="Toggle navigation">
@@ -169,7 +170,4 @@
   </div>
 </section>
 
-
-
-    <!-- Headers 1 -->
  

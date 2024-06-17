@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+     <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="https://www.froala.com">
+            <img src="logo.png" height="30" alt="image">
+          </a>
+        </nav>
+      </div>
+    </header>
+  <script>
+  var page = window.location.pathname.split('/')
+  page = page[page.length - 1]
+
+  var nav = document.querySelector('a[href="' + page + '"]')
+  if (nav) {
+    nav.classList.add('active')
+  }
+
+</script>
   <title>Froala Design Blocks</title>
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
 
@@ -150,24 +169,7 @@
   </div>
 </section>
 
-<script>
-  var page = window.location.pathname.split('/')
-  page = page[page.length - 1]
 
-  var nav = document.querySelector('a[href="' + page + '"]')
-  if (nav) {
-    nav.classList.add('active')
-  }
-
-</script>
 
     <!-- Headers 1 -->
-    <header>
-      <div class="container">
-        <nav class="navbar">
-          <a href="https://www.froala.com">
-            <img src="logo.png" height="30" alt="image">
-          </a>
-        </nav>
-      </div>
-    </header>
+ 
